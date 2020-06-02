@@ -1,7 +1,7 @@
 <!-- Home 下方的主要区域 -->
 <!-- 包括侧边栏和右侧主要区域 -->
 <template>
-    <div id="home_container">
+    <div class="main_child_container">
         <el-container>
             <!-- 侧边栏 -->
             <el-aside>
@@ -45,17 +45,6 @@ export default {
 </script>
 
 <style scoped>
-#home_container{
-  height: 100%;
-}
-.el-container{
-    height: 100%;
-}
-.el-aside{
-    background: pink;
-}
-.el-main{
-    background: lightblue;
-    padding:0;
-}
+  /* 导入组件公共样式文件 */
+  @import '../../assets/css/main_child.css';
 </style>

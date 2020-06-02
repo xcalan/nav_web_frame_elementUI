@@ -1,0 +1,14 @@
+/* 保证Home.vue, Create.vue, Setting.vue中的下方主体区域占满整个屏幕  */
+.main_child_container{
+    height: 100%;
+}
+.el-container{
+    height: 100%;
+}
+.el-aside{
+    background: pink;
+}
+.el-main{
+    background: lightblue;
+    padding:0;
+}

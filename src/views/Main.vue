@@ -2,7 +2,7 @@
 <!--包括顶部导航和下方主体内容-->
 
 <template>
-    <div id='main_container'>
+    <div class='main_container'>
         <el-container>
             
             <!-- 顶部导航 -->
@@ -28,7 +28,7 @@
  export default {
     data() {
       return {
-        activeIndex: '/'+ this.$route.path.split("/")[1]
+        activeIndex: '/'+ this.$route.path.split("/")[1] // /home | /create | /setting
       };
     },
     methods: {
@@ -45,7 +45,7 @@
 </script>
 
 <style scoped>
-#main_container{
+.main_container{
     height: 100%;
 }
 .el-container{
