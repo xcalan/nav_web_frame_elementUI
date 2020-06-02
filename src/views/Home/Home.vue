@@ -3,8 +3,8 @@
 <template>
     <div class="main_child_container">
         <el-container>
-            <!-- 侧边栏 -->
-            <el-aside>
+            <!-- 侧边栏 class="el-aside-left"为自定义类，一定要加上-->
+            <el-aside class="el-aside-left">
               <el-menu :default-active="this.$route.path" class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose"
                 background-color="#545c64" text-color="#fff" active-text-color="#ffd04b" router>
                 <el-menu-item index="/home/home1">
@@ -21,8 +21,8 @@
                 </el-menu-item>
               </el-menu>
             </el-aside>
-            <!-- 右侧主体区域 -->
-            <el-main>
+            <!-- 右侧主体区域 class="el-main-right"为自定义类，一定要加上-->
+            <el-main class="el-main-right">
                 <router-view></router-view>
             </el-main>
         </el-container>
@@ -47,4 +47,5 @@ export default {
 <style scoped>
   /* 导入组件公共样式文件 */
   @import '../../assets/css/main_child.css';
+
 </style>
